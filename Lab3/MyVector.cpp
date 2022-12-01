@@ -1,20 +1,11 @@
 #include "MyVector.h"
 #include <iostream>
 
-MyVector::MyVector(){
-    size = 0;
-    capacity = 0;
-    ptr = nullptr;
-}
+MyVector::MyVector(): capacity{0}, ptr{nullptr}{}
 
-MyVector::MyVector(unsigned int s){
-    size = s;
-    capacity = s;
-    double* p = new double[s];
-    ptr = p;
-    for(int i = 0; i < s; ++i) {ptr[i] = 0;}
-}
+MyVector::MyVector(unsigned int s): capacity{s}, ptr{new double[s]} {for(int i = 0; i < s; ++i) {ptr[i] = 0;}}
 
+/*
 MyVector::MyVector(std::initializer_list<double> list)
     : size{list.size()}, capacity{list.size()}, ptr{new double[capacity]}{
         std::copy(list.begin(), list.end(), ptr);
@@ -30,12 +21,15 @@ MyVector::MyVector(MyVector&& v) : size{v.size}, capacity{v.capacity}, ptr{v.ptr
         v.capacity = 0;
         v.ptr = nullptr;
     }
+*/
 
 void MyVector::safeSet(const int index, const double elem){
     if(index > 0 && index < size){
         ptr[index] = elem;
     }
+    throw Invalid();
 }
+
 double MyVector::safeGet(const int index){
     if(index > 0 && index < size){
         return ptr[index];
@@ -43,6 +37,7 @@ double MyVector::safeGet(const int index){
     throw Invalid();
 }   
 
+/*
 MyVector& MyVector::operator=(const MyVector& v){
     double* p = new double[v.size];
     std::copy(v.ptr, v.ptr+v.size, p);
@@ -95,12 +90,11 @@ const MyVector& MyVector::at(unsigned int index) const{
     if(index >= size){throw Invalid();}
     else {return ptr[index];}
 }
+*/
 
 void MyVector::printVector(){
     std::cout << "Vettore: { ";
-    for (int i = 0; i < size; i++) {
-        std::cout << ptr[i] << " "; 
-    }
+    for (int i = 0; i < size; i++) {std::cout << ptr[i] << " ";}
     std::cout << "}" <<std::endl;
 }
 
