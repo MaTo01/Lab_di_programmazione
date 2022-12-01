@@ -1,13 +1,8 @@
 #include <iostream>
 
-void printArrayLength(double* array){
-    
-    std::cout<<sizeof(array);
-    
-}
+void printArrayLength(double* array) {std::cout<<sizeof(array);}
 
 int main(){
-    
     constexpr int size = 5;
     double doubleArray[size] = {};
     
