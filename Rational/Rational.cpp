@@ -35,7 +35,7 @@ public:
 	Rational(int a, int b) :num{a}, den{b} {normalize();}
 	
 	void normalize(){
-		if(den == 0) throw invalid_argument("non puoi dividere per 0 un numero!");
+		if(den == 0) {throw invalid_argument("non puoi dividere per 0 un numero!");}
 		if(den < 0) {
 			den = -den;
 			num = -num;
@@ -141,42 +141,42 @@ int main(void){
 	cout << "inserisci il denominatore del secondo razionale: ";
 	cin >> d;
 	try{
-	Rational rational1(a,b);
-	Rational rational2(c,d);
+		Rational rational1(a,b);
+		Rational rational2(c,d);
 	
-	cout << "primo numero razionale: " << rational1 
-		<< " = " << rational1.toDouble() << endl;
-	cout << "secondo numero razionale: " << rational2 
-		<< " = " << rational2.toDouble() << endl;
+		cout << "primo numero razionale: " << rational1 
+	     	     << " = " << rational1.toDouble() << endl;
+		cout << "secondo numero razionale: " << rational2 
+	     	     << " = " << rational2.toDouble() << endl;
 	
-	Rational rationalOperatorPlus = rational1 + rational2;
-	Rational rationalOperatorMinus = rational1 - rational2;
-	Rational rationalOperatorMul = rational1 * rational2;
-	Rational rationalOperatorDivide = rational1/rational2;
+		Rational rationalOperatorPlus = rational1 + rational2;
+		Rational rationalOperatorMinus = rational1 - rational2;
+		Rational rationalOperatorMul = rational1 * rational2;
+		Rational rationalOperatorDivide = rational1/rational2;
 	
-	//stampa r1 + r2
-	cout << "\nSomma: " << rationalOperatorPlus 
-		<< " = " << rationalOperatorPlus.toDouble() << endl;
+		//stampa r1 + r2
+		cout << "\nSomma: " << rationalOperatorPlus 
+	    	     << " = " << rationalOperatorPlus.toDouble() << endl;
 		
-	//stampa r1 - r2
-	cout << "Sottrazione: " << rationalOperatorMinus 
-		<< " = " << rationalOperatorMinus.toDouble() << endl;
+		//stampa r1 - r2
+		cout << "Sottrazione: " << rationalOperatorMinus 
+	     	     << " = " << rationalOperatorMinus.toDouble() << endl;
 	
-	//stampa r1 * r2
-	cout << "Moltiplicazione: " << rationalOperatorMul 
-		<< " = " << rationalOperatorMul.toDouble() << endl;
+		//stampa r1 * r2
+		cout << "Moltiplicazione: " << rationalOperatorMul 
+	     	     << " = " << rationalOperatorMul.toDouble() << endl;
 	
-	//stampa r1 / r2
-	cout << "Divisione: " << rationalOperatorDivide 
-		<< " = " << rationalOperatorDivide.toDouble() << endl;
+		//stampa r1 / r2
+		cout << "Divisione: " << rationalOperatorDivide 
+	     	     << " = " << rationalOperatorDivide.toDouble() << endl;
 	
-	if(rational1 == rational2){
-		cout << "\nI due numeri sono uguali" << endl;
-	}else if(rational1 > rational2){
-		cout << "\nil primo numero inserito e' maggiore del secondo" << endl;
-	}else if(rational1 < rational2){
-		cout << "\nil secondo numero inserito e' maggiore del primo" << endl;
-	}
+		if(rational1 == rational2){
+			cout << "\nI due numeri sono uguali" << endl;
+		}else if(rational1 > rational2){
+			cout << "\nil primo numero inserito e' maggiore del secondo" << endl;
+		}else if(rational1 < rational2){
+			cout << "\nil secondo numero inserito e' maggiore del primo" << endl;
+		}
 	
 	}catch(invalid_argument& e){
 		cerr<<e.what()<<endl;
