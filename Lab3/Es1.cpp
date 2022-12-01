@@ -1,11 +1,8 @@
 #include <iostream>
 
 void makeArray(){
-     
     int array[10] = {0};
-    
     int size = sizeof(array)/sizeof(*array);
-    
     int* p = &array[4];
     
     p[-4] = -4;
@@ -20,18 +17,13 @@ void makeArray(){
     p[5] = 5;    
     
     std::cout << "Array valido: [ ";
-    for(int i = 0; i < size; i++){
-        std::cout<<array[i]<<" ";
-    }
+    for(int i = 0; i < size; i++) {std::cout<<array[i]<<" ";}
     std::cout<<"]"<<std::endl;
 }
 
 void invalidArray(){
-     
     int array[10] = {0};
-    
     int size = sizeof(array)/sizeof(*array);
-    
     int* p = &array[4];
     
     p[-40] = -4;
@@ -46,14 +38,11 @@ void invalidArray(){
     p[50] = 5;    
     
     std::cout << "Array NON valido: [ ";
-    for(int i = 0; i < size; i++){
-        std::cout<<array[i]<<" ";
-    }
+    for(int i = 0; i < size; i++) {std::cout<<array[i]<<" ";}
     std::cout<<"]"<<std::endl;
 }
 
 int main(){
-    
     makeArray();
     
     try{
@@ -63,5 +52,4 @@ int main(){
     }
     
     return 0;
-    
 }
