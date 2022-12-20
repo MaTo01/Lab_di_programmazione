@@ -12,7 +12,8 @@
 //     or right-click the folder and open it on terminal
 //     After that, type "g++ src\main.cpp -o test -I include\RightHandRuleRobot.h -I include\RandomRobot.h"
 //     To test the program, type ".\test"
-//     Make sure to use the CMake extension to compile this project in every platform
+
+//     This program also supports a CMake compilation and execution, if needed
 
 int main(){ 
     std::cout << "\nReading and storing the maze from the .txt file:" << std::endl;
