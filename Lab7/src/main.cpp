@@ -13,9 +13,7 @@
 //     After that, type "g++ src\main.cpp -o test -I include\RightHandRuleRobot.h -I include\RandomRobot.h"
 //     To test the program, type ".\test"
 
-int main()
-{
-    
+int main(){ 
     std::cout << "\nReading and storing the maze from the .txt file:" << std::endl;
     std::cout.flush();
     Maze maze("Maze.txt");
