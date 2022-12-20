@@ -1,0 +1,5 @@
+C:/Users/utente/OneDrive/Desktop/progetto labirinto/build/CMakeFiles/main.dir
+C:/Users/utente/OneDrive/Desktop/progetto labirinto/build/CMakeFiles/package.dir
+C:/Users/utente/OneDrive/Desktop/progetto labirinto/build/CMakeFiles/package_source.dir
+C:/Users/utente/OneDrive/Desktop/progetto labirinto/build/CMakeFiles/edit_cache.dir
+C:/Users/utente/OneDrive/Desktop/progetto labirinto/build/CMakeFiles/rebuild_cache.dir
