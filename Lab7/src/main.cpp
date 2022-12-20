@@ -11,7 +11,7 @@
 //Use: open the terminal and type the command "cd <directory of the project folder>" 
 //     or right-click the folder and open it on terminal
 //     After that, type "g++ src\main.cpp -o test -I include\RightHandRuleRobot.h -I include\RandomRobot.h"
-//     To test the program, type ".\test
+//     To test the program, type ".\test"
 
 int main()
 {
