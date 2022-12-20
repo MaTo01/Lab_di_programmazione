@@ -1,7 +1,7 @@
 [
 {
-  "directory": "C:/Users/utente/OneDrive/Desktop/progetto labirinto/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/utente/OneDrive/Desktop/progetto labirinto/include\" -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c \"C:\\Users\\utente\\OneDrive\\Desktop\\progetto labirinto\\src\\main.cpp\"",
-  "file": "C:\\Users\\utente\\OneDrive\\Desktop\\progetto labirinto\\src\\main.cpp"
+  "directory": "C:/Users/utente/OneDrive/Desktop/Lab_di_programmazione/Lab7/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/utente/OneDrive/Desktop/Lab_di_programmazione/Lab7/include -O3 -DNDEBUG -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\utente\\OneDrive\\Desktop\\Lab_di_programmazione\\Lab7\\src\\main.cpp",
+  "file": "C:\\Users\\utente\\OneDrive\\Desktop\\Lab_di_programmazione\\Lab7\\src\\main.cpp"
 }
 ]
